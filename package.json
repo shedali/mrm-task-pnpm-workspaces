@@ -4,7 +4,9 @@
   "version": "1.1.2",
   "main": "index.js",
   "scripts": {
-    "test": "echo todo"
+    "test": "pnpm recursive run test",
+    "dev": "pnpm recursive run dev",
+    "build": "pnpm recursive run build"
   },
   "publishConfig": {
     "access": "public",
