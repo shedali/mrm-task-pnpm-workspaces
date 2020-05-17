@@ -1,0 +1,23 @@
+{
+  "name": "mrm-task-avats",
+  "description": "",
+  "version": "1.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo todo"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": "https://github.com/shedali/mrm-task-avats",
+  "keywords": [
+    "mrm",
+    "mrm-task"
+  ],
+  "dependencies": {
+    "mrm-core": "^2.1.3"
+  }
+}
