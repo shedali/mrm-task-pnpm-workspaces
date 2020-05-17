@@ -4,6 +4,9 @@ const { json, packageJson, lines, install } = require("mrm-core");
 function task() {
   const file = json("./package.json");
   file.exists();
+
+  const config = json("./.npmrc");
+  config.exists();
   // install("@ava/typescript");
   // install("ava");
   const pkg = packageJson()
@@ -20,6 +23,7 @@ function task() {
   lines('.npmrc').add('link-workspace-packages = true')
   
   file.save();
+  config.save();
 }
 
 task.description = "adds pnpm workspace";
